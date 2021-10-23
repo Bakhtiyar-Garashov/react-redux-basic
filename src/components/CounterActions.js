@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { increment, decrement, reset, incrementByAmount } from '../store/counterSlice';
+import { increment, decrement, reset, incrementByAmount, decrementByAmount } from '../store/counterSlice';
 
 function CounterActions(props) {
 
@@ -12,8 +12,7 @@ function CounterActions(props) {
         <button onClick={() =>dispatch(decrement())}>Decrement</button>
         <button onClick={() =>dispatch(reset())}>Reset</button>
         <button onClick={() =>dispatch(incrementByAmount(5))}>+ 5</button>
-
-
+        <button onClick={() =>dispatch(decrementByAmount(5))}>- 5</button>
         </div>
     );
 }

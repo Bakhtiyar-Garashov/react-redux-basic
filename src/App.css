@@ -1,0 +1,13 @@
+
+.App {
+  text-align: center;
+}
+.App div {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+button {
+  margin: 10px auto;
+  width: 100px;
+}
